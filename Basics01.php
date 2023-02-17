@@ -98,5 +98,5 @@ print("<br>");
 print("<br>");
 
 var_dump($name);
-var_dump($age)
+var_dump($age);
 ?>
