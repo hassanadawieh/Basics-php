@@ -21,4 +21,24 @@ echo greaterFn(40) . "<br>"; // 40 is greater than 30
 echo greaterFn(21) . "<br>"; // 21 is greater than 20
 echo greaterFn(12) . "<br>"; // 12 is greater than 10
 echo greaterFn(8) . "<br>";  // 8 is less than or equal to 10
+
+print("<br>");
+
+// variable
+$var1 = 45;
+$var2 = 32;
+echo"var1 = " . $var1 ."<br>";
+echo"var2 = " . $var2 ."<br>";
+print("<br>");
+$temp = $var1;
+$var1 = $var2;
+$var2 = $temp;
+
+echo"var1 = " . $var1 ."<br>";
+echo"var2 = " . $var2 ."<br>";
+print("<br>");
+print("<br>");
+print("<br>");
+
+
 ?>
