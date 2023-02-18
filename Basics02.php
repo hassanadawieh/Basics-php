@@ -106,9 +106,7 @@ function sum_of_digits($num) {
 echo sum_of_digits('1234');
 
 print("<br>");
-
 print("<br>");
-
 print("<br>");
 
 function replace_python($input) {
@@ -118,4 +116,24 @@ function replace_python($input) {
 }
 
 echo replace_python("hello I'm Python can you help me todays! Python");
+
+print("<br>");
+print("<br>");
+print("<br>");
+
+function is_power_of_two($num) {
+  if ($num < 0) { 
+    echo "$num is not positive" ;
+  }else
+  if (($num & ($num - 1)) == 0) { 
+    echo "$num is a power of 2";
+  }else {
+    echo "$num is not a power of 2";
+  }
+  
+}
+
+
+is_power_of_two('4');
+
 ?>
