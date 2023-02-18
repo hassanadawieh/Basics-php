@@ -91,4 +91,19 @@ function word_to_digit($word) {
 }
 
 echo word_to_digit('seven');
+print("<br>");
+print("<br>");
+print("<br>");
+
+function sum_of_digits($num) {
+  $sum = 0;
+  for ($i = 0; $i < strlen($num); $i++) {
+    $sum += $num[$i]; 
+  }
+  return $sum;
+}
+
+echo sum_of_digits('1234');
+
+
 ?>
