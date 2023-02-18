@@ -105,5 +105,17 @@ function sum_of_digits($num) {
 
 echo sum_of_digits('1234');
 
+print("<br>");
 
+print("<br>");
+
+print("<br>");
+
+function replace_python($input) {
+  $input = str_replace('Python ', ' PHP', $input); // replace "Python " with " PHP"
+  $input = str_replace('Python', 'PHP', $input); // replace "Python" with "PHP"
+  return $input;
+}
+
+echo replace_python("hello I'm Python can you help me todays! Python");
 ?>
