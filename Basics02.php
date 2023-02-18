@@ -36,9 +36,27 @@ $var2 = $temp;
 
 echo"var1 = " . $var1 ."<br>";
 echo"var2 = " . $var2 ."<br>";
+
+
 print("<br>");
 print("<br>");
 print("<br>");
 
+
+function isArmstrong($num) {
+  $sum = 0;
+  $temp = $num;
+  $n = strlen($num);
+  
+  while ($temp > 0) {
+    $digit = $temp % 10;
+    $sum += pow($digit, $n);
+    $temp = intval($temp / 10);
+  }
+  
+  return ($num == $sum);
+}
+
+echo isArmstrong(153) ? "true" : "false"; 
 
 ?>
