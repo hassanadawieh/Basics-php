@@ -6,4 +6,14 @@ while($x1 <=5){
     $x1 += 1 ;
     print("<br>");
 }
+$x2 = 1;
+while($x2 <= 8) {
+  $i = 1;
+  while($i <= $x2) {
+    echo "*";
+    $i++;
+  }
+  print( "<br>");
+  $x2++;
+}
 ?>
