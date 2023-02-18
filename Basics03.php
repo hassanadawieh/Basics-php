@@ -41,5 +41,14 @@ function countWord($text, $word) {
 }
 
 echo countWord('hello how are you hello I\'m fine','hello');
-
+print("<br>");
+print("<br>");
+print("<br>");
+$N = 0;
+$text = "123456";
+for($i = 0 ;$i < strlen($text);$i++){
+    
+    $N +=$text[$i];
+} 
+echo $N;
 ?>
