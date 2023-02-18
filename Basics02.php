@@ -159,4 +159,24 @@ function check_palindrome($string){
 echo check_palindrome("level");
 print("<br>");
 echo check_palindrome("hassan");
+
+print("<br>");
+print("<br>");
+print("<br>");
+
+function Is_prime($n){
+    $x = 2;
+    if($x < $n){
+        if($n%$x == 0){
+            return 0;
+        }else {
+            $x++;
+        }
+    }
+        return 1;
+    }
+    
+
+
+echo Is_prime(4)
 ?>
