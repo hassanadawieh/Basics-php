@@ -51,4 +51,19 @@ for($i = 0 ;$i < strlen($text);$i++){
     $N +=$text[$i];
 } 
 echo $N;
+print("<br>");
+print("<br>");
+print("<br>");
+
+$side1 = 9;
+$side2 = 13; 
+$diagonal = 15; 
+
+if ($side1 == $side2 && $diagonal * $diagonal == $side1 * $side1 + $side2 * $side2) {
+    echo "The parallelogram is a rectangle.";
+} elseif ($side1 == $side2 && $diagonal * $diagonal != $side1 * $side1 + $side2 * $side2) {
+    echo "The parallelogram is a rhombus.";
+} else {
+    echo "The shape is a parallelogram but not a rectangle or a rhombus.";
+}
 ?>
