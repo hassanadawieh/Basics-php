@@ -143,4 +143,20 @@ print("<br>");
 $num = 16;
 $sqrt = sqrt($num);
 echo $sqrt;
+
+print("<br>");
+print("<br>");
+print("<br>");
+
+function check_palindrome($string){
+    if($string == strrev($string)){
+        return 1;
+    }else {
+        return 0;
+    }
+}
+
+echo check_palindrome("level");
+print("<br>");
+echo check_palindrome("hassan");
 ?>
