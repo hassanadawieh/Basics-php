@@ -122,10 +122,10 @@ print("<br>");
 print("<br>");
 
 function is_power_of_two($num) {
-  if ($num < 0) { 
+  if ($num < 0) { // if the number is not positive
     echo "$num is not positive" ;
   }else
-  if (($num & ($num - 1)) == 0) { 
+  if (($num & ($num - 1)) == 0) { // if the number is a power of two
     echo "$num is a power of 2";
   }else {
     echo "$num is not a power of 2";
@@ -136,4 +136,11 @@ function is_power_of_two($num) {
 
 is_power_of_two('4');
 
+print("<br>");
+print("<br>");
+print("<br>");
+
+$num = 16;
+$sqrt = sqrt($num);
+echo $sqrt;
 ?>
