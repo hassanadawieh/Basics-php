@@ -55,8 +55,8 @@ print("<br>");
 print("<br>");
 print("<br>");
 
-$side1 = 9;
-$side2 = 13; 
+$side1 = 10;
+$side2 = 10; 
 $diagonal = 15; 
 
 if ($side1 == $side2 && $diagonal * $diagonal == $side1 * $side1 + $side2 * $side2) {
@@ -65,5 +65,22 @@ if ($side1 == $side2 && $diagonal * $diagonal == $side1 * $side1 + $side2 * $sid
     echo "The parallelogram is a rhombus.";
 } else {
     echo "The shape is a parallelogram but not a rectangle or a rhombus.";
+}
+print("<br>");
+print("<br>");
+print("<br>");
+
+$b = 8;
+for($i = 0 ; $i <= $b ; $i++){
+    for($j = 0 ; $j <= $i; $j++){
+    echo "*";
+    }
+  print("<br>");  
+}
+for($i = $b ; $i >= 0 ; $i--){
+    for($j = 0 ; $j <= $i; $j++){
+    echo "*";
+    }
+  print("<br>");  
 }
 ?>
