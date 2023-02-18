@@ -23,4 +23,23 @@ while($x3 > 0){
     $x3 -= 1;
 }
 echo $x;
+print("<br>");
+print("<br>");
+print("<br>");
+
+function countWord($text, $word) {
+  $words = explode(" ", $text);
+  $count = 0;
+  $i = 0;
+  while($i < count($words)) {
+    if($words[$i] == $word) {
+      $count++;
+    }
+    $i++;
+  }
+  return $count;
+}
+
+echo countWord('hello how are you hello I\'m fine','hello');
+
 ?>
