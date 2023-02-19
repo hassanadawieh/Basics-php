@@ -121,5 +121,26 @@ foreach ($transactions as $transaction) {
     echo "ID: " . $transaction["id"] . " => amount: " . $amount ;
     print("<br>");
 }
+print("<br>");
+print("<br>");
+print("<br>");
 
+
+$transaction2 = array(
+    array(
+        "id" => 1,
+        "name"=> "Gaby",
+        "email"=> "gaby@codi.tech"
+    ),
+    array(
+       "id" => 3,
+       "name"=> "Omar",
+       "email"=> "omar@codi.tech"
+    )
+);
+
+foreach ($transaction2 as $transaction){
+    echo "id: " . $transaction["id"] .", ". " name: " . $transaction["name"] .", ". " email: ". $transaction["email"] ;
+    print("<br>");
+}
 ?>
