@@ -87,19 +87,39 @@ print("<br>");
 print("<br>");
 print("<br>");
 
-$z = 8 ;
-for($i = 0 ; $i <= $z ; $i++){
-
-
-    for($j = $z ; $j >= 0 ; $j--){
-        $b = 1;
-        if($j == $b){
+for ($i = 0; $i < 7; $i++) {
+    for ($j = 0; $j < 7; $j++) {
+        if ($i == 0 || $i == 6 || $i + $j == 6) {
             echo "*";
-        }else{
+        } else {
             echo " ";
         }
-         $b++;
     }
-    
+    print("<br>");
 }
+
+print("<br>");
+print("<br>");
+print("<br>");
+
+
+$transactions = array(
+    array(
+        "id" => 1,
+        "debit"=>2,
+        "credit"=>3
+    ),
+    array(
+        "id" => 2,
+        "debit"=>15,
+        "credit"=>10
+    )
+);
+
+foreach ($transactions as $transaction) {
+    $amount = abs($transaction["debit"] - $transaction["credit"]);
+    echo "ID: " . $transaction["id"] . " => amount: " . $amount ;
+    print("<br>");
+}
+
 ?>
