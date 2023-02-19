@@ -83,4 +83,23 @@ for($i = $b ; $i >= 0 ; $i--){
     }
   print("<br>");  
 }
+print("<br>");
+print("<br>");
+print("<br>");
+
+$z = 8 ;
+for($i = 0 ; $i <= $z ; $i++){
+
+
+    for($j = $z ; $j >= 0 ; $j--){
+        $b = 1;
+        if($j == $b){
+            echo "*";
+        }else{
+            echo " ";
+        }
+         $b++;
+    }
+    
+}
 ?>
