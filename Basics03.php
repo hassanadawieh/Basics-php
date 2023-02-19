@@ -143,4 +143,23 @@ foreach ($transaction2 as $transaction){
     echo "id: " . $transaction["id"] .", ". " name: " . $transaction["name"] .", ". " email: ". $transaction["email"] ;
     print("<br>");
 }
+print("<br>");
+print("<br>");
+print("<br>");
+
+
+function print_personal_details($test) {
+  foreach ($test as $key => $value) {
+    echo "$key=$value";
+    print("<br>");
+  }
+}
+
+$personal_details = array("name" => "Rajesh Rao", "occupation" => "Engineer", "age" => 39, "country" => "India");
+print_personal_details($personal_details);
+print("<br>");
+print("<br>");   
+print("<br>");
+print("<br>");
+
 ?>
